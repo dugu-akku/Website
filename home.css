@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(24, 23, 23);
+    color: white;
+    animation-name: body;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    position: relative;
+}
+
+
+@keyframes body {
+    from{
+        transform: translate(50vw,0vh);
+    }
+    to{
+        transform: translate(0vw,0vh);
+    }
+    
+ }
+
+
+.head{
+    height: 80px;
+    width: 100%;
+    background-color:black;
+    display: flex;
+}
+
+.box > h1{
+    padding-left:1rem;
+    padding-top: 1rem;
+    font-size: 3rem;
+    text-decoration:overline underline;
+    text-decoration-color: rgb(126, 158, 15);
+    text-decoration-thickness: .2rem;
+    color: rgb(215, 230, 163);
+}
+
+.search{
+    margin-left: 2rem;
+    padding: 1.7rem;
+}
+
+#searching{
+    height: 2rem;
+    width: 20rem;
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: 10rem;
+}
+
+nav{
+    padding: 2rem;
+}
+
+nav > a{
+    padding: .7rem;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+
+.but{
+    margin-left:1.6rem ;
+    padding: 2rem;
+}
+button{
+    cursor: pointer;
+    height: 2rem;
+    width: 5rem;
+    color: white;
+    border: none;
+    background-color:  rgb(24, 23, 23);
+    font-size: 1.2rem;
+}
+
+button:hover{
+    text-decoration: underline;
+}
+
+.wel{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(70, 67, 67);
+}
+
+@keyframes wel {
+    from{
+        transform: translate(50vw,0vh);
+    }
+    to{
+        transform: translate(-50vw,0vh);
+    }
+}
+
+.wel > h2{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    animation-name: wel;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.wel > h1{
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: rgb(215, 230, 163);
+    animation-name: wel;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.course > h2{
+    margin-bottom: .5rem;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    text-decoration-thickness: .2rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.tbox > h3{
+    font-size: 3rem;
+    padding-top: 2rem;
+    display: flex;
+    justify-content:center;
+    text-decoration: underline dotted;
+    text-decoration-color: black;
+}
+
+.tbox > li{
+    margin-top: 1rem;
+    padding-left: 4rem;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    text-decoration: underline wavy;
+    text-decoration-color: black;
+}
+
+ video{
+    margin: 5rem;
+}
+
+.foot{
+    margin-top: 5rem;
+    background-image: url(./fff.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.foot > .name{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    text-decoration:overline underline;
+    text-decoration-color: rgb(126, 158, 15);
+    text-decoration-thickness: .2rem;
+    color: rgb(215, 230, 163);
+}
+
+.more > li{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding-top: 2rem;
+    color:  rgb(126, 158, 15);
+}
+
+.top:hover{
+    border-color: yellow;
+}
+.top{
+    display: inline-block;
+    margin-left: 2rem;
+    margin-top: 3rem;
+    cursor: pointer;
+    border: 1px solid rgb(253, 243, 243);
+    border-radius: 5px;
+}
+
+.tuto > h2{
+    padding: 1rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+.tuto > li{
+    padding: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.ref > h2{
+    padding: 1rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+.ref > li{
+    padding: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.exam > h2{
+    padding: 1rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+.exam> li{
+    padding: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.cert> h2{
+    padding: 1rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+.cert > li{
+    padding: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.foot > .about{
+    height: 530px;
+}
+.about > h2{
+    padding-top: 15rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    text-decoration:underline;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about > h3{
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copy > p{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    color: rgb(197, 231, 75);
+}
+
+
+@media (max-width:600px){
+
+    .head{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav{
+        display: flex; 
+        flex-direction: column;
+        padding-top: 1rem;
+     }
+
+     .course{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+
+     .container{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+     }
+
+     .tbox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
+
+     .video{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
+
+     .top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+}
